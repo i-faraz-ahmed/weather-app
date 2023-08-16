@@ -1,0 +1,7 @@
+<div class="forecast">
+
+<div *ngFor="let item of weatherService.weatherData?.forecast?.forecastday" class="forecastItem">
+   <img [attr.src]="item.day.condition.icon"/> <span> {{item.dayName}} </span>  <span>{{item.day.maxtemp_c}}/{{item.day.mintemp_c}} </span>
+</div>
+
+</div>
